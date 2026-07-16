@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mường Thanh Travel — Điện Biên Phủ Valley &amp; Laos Border Tours</title>
+<meta name="description" content="Locally guided tours through the Mường Thanh valley of Điện Biên Phủ and overland journeys across the Tây Trang border into Laos.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&family=Spectral:ital@1&family=Work+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23232C3D%22/><path d=%22M10 70 L30 40 L45 58 L60 30 L90 70 Z%22 fill=%22%23B8863B%22/></svg>">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="site-header" id="top">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top">
+      <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true">
+        <path d="M4 34 L16 16 L23 26 L30 12 L44 34 Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+        <circle cx="30" cy="12" r="2.2" fill="currentColor"/>
+      </svg>
+      <span class="brand-name">Mường Thanh Travel</span>
+    </a>
+    <nav class="main-nav" id="main-nav">
+      <a href="#valley">Mường Thanh</a>
+      <a href="#laos">Into Laos</a>
+      <a href="#crossing">Border guide</a>
+      <a href="#voices">Travellers</a>
+      <a href="#contact" class="nav-cta">Plan a trip</a>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+  <div class="hero-art" aria-hidden="true">
+    <svg viewBox="0 0 1400 800" preserveAspectRatio="xMidYMax slice" class="contour-svg">
+      <defs>
+        <linearGradient id="skyfade" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#141A16"/>
+          <stop offset="100%" stop-color="#232C3D"/>
+        </linearGradient>
+      </defs>
+      <rect width="1400" height="800" fill="url(#skyfade)"/>
+      <!-- contour ridgelines -->
+      <g class="contours" fill="none" stroke="#3c4a3f" stroke-width="1.5">
+        <path d="M-50,620 C 150,560 300,640 480,580 C 660,520 820,600 1000,560 C 1150,530 1300,580 1450,540" />
+        <path d="M-50,660 C 150,610 320,680 500,630 C 680,580 830,650 1010,610 C 1160,580 1300,630 1450,590" />
+        <path d="M-50,700 C 160,660 330,720 510,680 C 690,630 840,700 1020,660 C 1170,630 1310,680 1450,640" />
+        <path d="M-50,740 C 170,710 340,760 520,730 C 700,690 850,750 1030,710 C 1180,690 1320,730 1450,700" />
+      </g>
+      <!-- distant mountain silhouettes -->
+      <path d="M-20,560 L120,420 L230,520 L340,380 L430,470 L560,340 L700,500 L820,410 L940,530 L1080,400 L1200,500 L1340,430 L1450,520 L1450,800 L-20,800 Z" fill="#1b2320" opacity="0.9"/>
+      <path d="M-20,600 L180,480 L300,560 L470,440 L620,570 L780,460 L940,580 L1100,470 L1260,570 L1450,490 L1450,800 L-20,800 Z" fill="#141a17"/>
+      <!-- route line: Dien Bien Phu -> Muong Thanh -> Tay Trang -> Laos -->
+      <path id="route-path" d="M 230,660 C 320,600 400,560 470,520 C 560,470 630,430 700,400 C 800,355 900,340 990,320 C 1080,300 1160,270 1230,220"
+            fill="none" stroke="#B8863B" stroke-width="2" stroke-dasharray="6 8" stroke-linecap="round"/>
+      <!-- waypoint markers -->
+      <g class="waypoint">
+        <circle cx="230" cy="660" r="6" fill="#EAEFE7"/>
+        <circle cx="230" cy="660" r="11" fill="none" stroke="#EAEFE7" stroke-width="1.2" class="pulse"/>
+        <text x="244" y="656" class="map-label">Điện Biên Phủ</text>
+      </g>
+      <g class="waypoint">
+        <circle cx="470" cy="520" r="5" fill="#EAEFE7"/>
+        <text x="484" y="516" class="map-label">Mường Thanh valley</text>
+      </g>
+      <g class="waypoint">
+        <circle cx="990" cy="320" r="5" fill="#B8863B"/>
+        <text x="1004" y="316" class="map-label">Tây Trang border</text>
+      </g>
+      <g class="waypoint">
+        <circle cx="1230" cy="220" r="6" fill="#EAEFE7"/>
+        <circle cx="1230" cy="220" r="11" fill="none" stroke="#EAEFE7" stroke-width="1.2" class="pulse pulse-delay"/>
+        <text x="1244" y="216" class="map-label">Laos</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="wrap hero-content">
+    <p class="eyebrow">Điện Biên Phủ · Northwest Vietnam</p>
+    <h1>Where the Mường Thanh rice terraces meet the road to Laos.</h1>
+    <p class="hero-sub">A small, locally-run agency based in Điện Biên Phủ, running trips through the widest rice basin in the Northwest and overland across the Tây Trang gate into Laos. We plan the permits and the transport — you keep the window seat.</p>
+    <div class="hero-actions">
+      <a href="#valley" class="btn btn-primary">See Mường Thanh tours</a>
+      <a href="#laos" class="btn btn-ghost">See Laos crossings</a>
+    </div>
+  </div>
+  <a href="#about" class="scroll-cue" aria-label="Scroll to content">
+    <svg viewBox="0 0 24 24" width="20" height="20"><path d="M12 4 L12 20 M6 14 L12 20 L18 14" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+  </a>
+</section>
+
+<!-- ============ ABOUT / WHY US ============ -->
+<section class="section about" id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-copy">
+        <p class="eyebrow">Local, on the ground</p>
+        <h2>Guides who grew up in the valley the tour is about.</h2>
+        <p>Điện Biên Phủ sits inside a bowl of hills, and almost everything worth seeing is either in that bowl or over the ridge in Laos. Our guides are from Mường Thanh commune and the Thái villages around it — this isn't a branch office of a Hanoi company, it's a handful of people who know which farmer will let you walk his bunds at sunrise and which border officer is on duty on a Tuesday.</p>
+      </div>
+      <div class="about-points">
+        <div class="point">
+          <svg viewBox="0 0 32 32" class="point-icon"><path d="M4 24 L12 12 L17 18 L22 8 L28 24 Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+          <h3>The valley, properly</h3>
+          <p>Rice-terrace walks, the A1 Hill battlefield sites, stilt-house villages — routed around harvest and market days, not the other way round.</p>
+        </div>
+        <div class="point">
+          <svg viewBox="0 0 32 32" class="point-icon"><circle cx="16" cy="16" r="10" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 6 L16 16 L22 20" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+          <h3>Border paperwork handled</h3>
+          <p>We track which visas currently clear Tây Trang and arrange your Lao entry in advance, so a land crossing doesn't turn into a bus-station story.</p>
+        </div>
+        <div class="point">
+          <svg viewBox="0 0 32 32" class="point-icon"><path d="M6 16 Q16 4 26 16 Q16 28 6 16 Z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="16" cy="16" r="3" fill="currentColor"/></svg>
+          <h3>Small groups only</h3>
+          <p>Four to eight travellers per trip. One driver, one guide, and vehicles that actually fit the mountain roads past the border.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MUONG THANH TOURS ============ -->
+<section class="section tours" id="valley">
+  <div class="wrap">
+    <p class="eyebrow">In the valley</p>
+    <h2>Mường Thanh valley tours</h2>
+    <p class="section-lede">Mường Thanh is the largest rice basin in Vietnam's northwest and the site of the 1954 battle that ended French rule in Indochina — a working farm valley with a war history folded into it. These trips stay inside the bowl of hills around Điện Biên Phủ.</p>
+
+    <div class="card-grid">
+
+      <article class="tour-card">
+        <div class="card-art" data-art="terraces">
+          <svg viewBox="0 0 400 220"><rect width="400" height="220" fill="#dfe6d6"/><path d="M0,170 L400,150 L400,220 L0,220 Z" fill="#7a9463"/><path d="M0,190 L400,175 L400,220 L0,220 Z" fill="#5c7749"/><path d="M0,205 L400,198 L400,220 L0,220 Z" fill="#455e35"/><circle cx="70" cy="110" r="26" fill="#e9ce8f" opacity="0.9"/></svg>
+        </div>
+        <div class="card-body">
+          <p class="card-meta">Half day · on foot &amp; by bicycle</p>
+          <h3>Rice basin at first light</h3>
+          <p>Out before sunrise to walk the bunds between paddies while the valley mist is still sitting on the fields, finishing with breakfast at a Thái stilt-house family's own kitchen.</p>
+          <ul class="card-highlights">
+            <li>Terrace walk, timed to the season's water level</li>
+            <li>Breakfast with a farming family</li>
+            <li>Bicycle return through Him Lam market</li>
+          </ul>
+          <div class="card-foot"><span class="price">from $28 / person</span><a href="#contact" class="card-link">Enquire →</a></div>
+        </div>
+      </article>
+
+      <article class="tour-card">
+        <div class="card-art" data-art="hill">
+          <svg viewBox="0 0 400 220"><rect width="400" height="220" fill="#e3e1d3"/><path d="M0,160 L120,80 L220,150 L300,60 L400,140 L400,220 L0,220 Z" fill="#8a7654"/><path d="M300,60 L310,40 L320,60" fill="none" stroke="#B8863B" stroke-width="3"/><circle cx="310" cy="40" r="4" fill="#B8863B"/></svg>
+        </div>
+        <div class="card-body">
+          <p class="card-meta">Full day · historical</p>
+          <h3>A1 Hill &amp; the 1954 battlefield</h3>
+          <p>The bunkers, trenches, and command posts from the 56-day siege that ended in May 1954, with the small museum and cemetery, read against what the valley looks like today.</p>
+          <ul class="card-highlights">
+            <li>A1 Hill trenches and crater</li>
+            <li>Điện Biên Phủ Victory Museum</li>
+            <li>De Castries' command bunker</li>
+          </ul>
+          <div class="card-foot"><span class="price">from $35 / person</span><a href="#contact" class="card-link">Enquire →</a></div>
+        </div>
+      </article>
+
+      <article class="tour-card">
+        <div class="card-art" data-art="village">
+          <svg viewBox="0 0 400 220"><rect width="400" height="220" fill="#e6e2cf"/><path d="M60,140 L60,190 L140,190 L140,140 L100,110 Z" fill="#9c7d54"/><path d="M180,150 L180,190 L250,190 L250,150 L215,125 Z" fill="#7c6446"/><path d="M0,190 L400,190 L400,220 L0,220 Z" fill="#5c7749"/></svg>
+        </div>
+        <div class="card-body">
+          <p class="card-meta">Full day · culture &amp; craft</p>
+          <h3>Thái stilt villages &amp; Him Lam loop</h3>
+          <p>Weaving looms, brocade dyeing, and a lunch of steamed sticky rice in bamboo, in villages a short drive from town where stilt houses are still lived in, not staged.</p>
+          <ul class="card-highlights">
+            <li>Brocade weaving workshop</li>
+            <li>Lunch in a family stilt house</li>
+            <li>Him Lam battlefield stop</li>
+          </ul>
+          <div class="card-foot"><span class="price">from $32 / person</span><a href="#contact" class="card-link">Enquire →</a></div>
+        </div>
+      </article>
+
+      <article class="tour-card">
+        <div class="card-art" data-art="lake">
+          <svg viewBox="0 0 400 220"><rect width="400" height="220" fill="#dce6df"/><path d="M0,120 L120,70 L240,110 L400,60 L400,220 L0,220 Z" fill="#3f5a45"/><ellipse cx="230" cy="175" rx="150" ry="30" fill="#8fb3ad"/></svg>
+        </div>
+        <div class="card-body">
+          <p class="card-meta">Day trip · nature</p>
+          <h3>Pá Khoang lake &amp; pine ridge</h3>
+          <p>A quieter counterpoint to the valley floor: pine forest above the reservoir, a boat out to the small islands, and views back down over the whole basin.</p>
+          <ul class="card-highlights">
+            <li>Boat trip on Pá Khoang lake</li>
+            <li>Pine ridge lookout over the valley</li>
+            <li>Picnic lunch by the water</li>
+          </ul>
+          <div class="card-foot"><span class="price">from $30 / person</span><a href="#contact" class="card-link">Enquire →</a></div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ LAOS TOURS ============ -->
+<section class="section tours tours-laos" id="laos">
+  <div class="wrap">
+    <p class="eyebrow">Over the border</p>
+    <h2>Overland into Laos</h2>
+    <p class="section-lede">Điện Biên Phủ is 35km from the Tây Trang gate — one of the quieter crossings between Vietnam and Laos, opposite Pang Hok on the Lao side. From there the road runs on to Muang Khua and down toward Luang Prabang.</p>
+
+    <div class="card-grid">
+
+      <article class="tour-card">
+        <div class="card-art" data-art="border">
+          <svg viewBox="0 0 400 220"><rect width="400" height="220" fill="#dbe2d9"/><path d="M0,150 L400,110 L400,220 L0,220 Z" fill="#647a54"/><rect x="185" y="60" width="6" height="100" fill="#232C3D"/><path d="M191,60 L230,70 L191,80 Z" fill="#B8863B"/></svg>
+        </div>
+        <div class="card-body">
+          <p class="card-meta">Day trip · border run</p>
+          <h3>Tây Trang gate &amp; back</h3>
+          <p>For travellers who just want to stand on the line and look both ways: the drive up to the border post, the market at the crossing, and lunch in a Lao Loum village a few kilometres over on a day pass.</p>
+          <ul class="card-highlights">
+            <li>Tây Trang – Pang Hok border post</li>
+            <li>Border market</li>
+            <li>Return to Điện Biên Phủ same evening</li>
+          </ul>
+          <div class="card-foot"><span class="price">from $45 / person</span><a href="#contact" class="card-link">Enquire →</a></div>
+        </div>
+      </article>
+
+      <article class="tour-card">
+        <div class="card-art" data-art="overland">
+          <svg viewBox="0 0 400 220"><rect width="400" height="220" fill="#e0ded0"/><path d="M0,180 C100,140 150,190 220,150 C290,110 340,160 400,120" fill="none" stroke="#B8863B" stroke-width="3" stroke-dasharray="8 6"/><path d="M0,200 L400,150 L400,220 L0,220 Z" fill="#546b45"/></svg>
+        </div>
+        <div class="card-body">
+          <p class="card-meta">3 days · overland crossing</p>
+          <h3>Điện Biên Phủ → Muang Khua → Luang Prabang</h3>
+          <p>Cross at Tây Trang in the morning, overnight by the Nam Ou river in Muang Khua, then continue by road or slow boat down to Luang Prabang. Private vehicle to the border, arranged transfers after that.</p>
+          <ul class="card-highlights">
+            <li>Private transfer to Tây Trang border</li>
+            <li>Night in Muang Khua on the Nam Ou</li>
+            <li>Onward transfer or boat to Luang Prabang</li>
+          </ul>
+          <div class="card-foot"><span class="price">from $180 / person</span><a href="#contact" class="card-link">Enquire →</a></div>
+        </div>
+      </article>
+
+      <article class="tour-card">
+        <div class="card-art" data-art="phongsaly">
+          <svg viewBox="0 0 400 220"><rect width="400" height="220" fill="#e2e0d2"/><path d="M0,140 L90,70 L180,130 L260,55 L340,120 L400,90 L400,220 L0,220 Z" fill="#495d3d"/><path d="M0,160 L120,110 L220,160 L320,100 L400,140 L400,220 L0,220 Z" fill="#31432a"/></svg>
+        </div>
+        <div class="card-body">
+          <p class="card-meta">5 days · highland loop</p>
+          <h3>Phongsaly highlands loop</h3>
+          <p>North from the border into Lao Phongsaly province — Akha and Phunoy villages, old-growth tea forests, and a return route that loops back to Điện Biên Phủ rather than backtracking the same road.</p>
+          <ul class="card-highlights">
+            <li>Phongsaly old town &amp; tea forests</li>
+            <li>Akha and Phunoy village visits</li>
+            <li>Loop return via Tây Trang</li>
+          </ul>
+          <div class="card-foot"><span class="price">from $310 / person</span><a href="#contact" class="card-link">Enquire →</a></div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ BORDER GUIDE ============ -->
+<section class="section crossing" id="crossing">
+  <div class="wrap crossing-wrap">
+    <div class="crossing-copy">
+      <p class="eyebrow">Practical</p>
+      <h2>The Tây Trang crossing, waypoint by waypoint</h2>
+      <p>Land crossings reward planning more than any other part of a Laos trip. Visa rules at Tây Trang have changed more than once in the last few years — currently e-visa, visa-on-arrival, and embassy-issued Vietnamese visas can all exit here, but Lao visa-on-arrival is <em>not</em> issued at this post, so Lao entry needs to be arranged beforehand. We keep this current and handle it for anyone booking a Laos trip with us.</p>
+      <a href="#contact" class="btn btn-primary">Ask about visas for this trip</a>
+    </div>
+    <ol class="waypoint-list">
+      <li>
+        <span class="wp-dist">0 km</span>
+        <div class="wp-body"><h4>Điện Biên Phủ</h4><p>Starting point — hotels, the bus station, and currency exchange around the central market.</p></div>
+      </li>
+      <li>
+        <span class="wp-dist">35 km</span>
+        <div class="wp-body"><h4>Tây Trang border post (VN)</h4><p>Vietnamese exit checkpoint. Passport control and customs; no visa-on-arrival issued here.</p></div>
+      </li>
+      <li>
+        <span class="wp-dist">~40 km</span>
+        <div class="wp-body"><h4>Pang Hok checkpoint (LA)</h4><p>Lao entry post, also known as Sop Hun. Pre-arranged Lao entry clears fastest here.</p></div>
+      </li>
+      <li>
+        <span class="wp-dist">~140 km</span>
+        <div class="wp-body"><h4>Muang Khua, Laos</h4><p>Riverside town on the Nam Ou — the usual overnight stop before continuing south.</p></div>
+      </li>
+      <li>
+        <span class="wp-dist">~250 km</span>
+        <div class="wp-body"><h4>Luang Prabang</h4><p>By road, or by slow boat down the Nam Ou from Muang Khua in the dry season.</p></div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="section voices" id="voices">
+  <div class="wrap">
+    <p class="eyebrow">From the road</p>
+    <h2>What the trip notebooks say</h2>
+    <div class="voice-grid">
+      <blockquote class="voice-card">
+        <p>"We'd budgeted one day for the border and it turned into the best part of the trip — the guide knew the Pang Hok officer by name and we were drinking tea in Muang Khua by lunch."</p>
+        <cite>Marit H. — Bergen, Norway</cite>
+      </blockquote>
+      <blockquote class="voice-card">
+        <p>"Nobody mentions how much of Điện Biên Phủ is still working farmland. Walking the terraces before the tour buses arrived at the museum was the actual highlight."</p>
+        <cite>Priya N. — Melbourne, Australia</cite>
+      </blockquote>
+      <blockquote class="voice-card">
+        <p>"Sorted our Lao visa paperwork two weeks ahead so the crossing itself took maybe twenty minutes. Would not attempt Tây Trang without that again."</p>
+        <cite>Tomáš K. — Brno, Czechia</cite>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section contact" id="contact">
+  <div class="wrap contact-wrap">
+    <div class="contact-copy">
+      <p class="eyebrow">Get in touch</p>
+      <h2>Tell us roughly what you want, we'll shape a route around it.</h2>
+      <p>Trips can run as a single valley day, a straight border crossing, or a longer loop into Laos — most groups mix and match from the tours above. Write with your dates and group size and we'll reply with a plan and a price.</p>
+    </div>
+    <div class="contact-card">
+      <a class="contact-row" href="mailto:hello@muongthanhtravel.example">
+        <svg viewBox="0 0 24 24" class="contact-icon"><path d="M3 6 L12 13 L21 6 M3 6 L3 18 L21 18 L21 6 Z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+        <span>hello@muongthanhtravel.example</span>
+      </a>
+      <a class="contact-row" href="tel:+842301234567">
+        <svg viewBox="0 0 24 24" class="contact-icon"><path d="M5 4 L9 4 L11 9 L8 11 C9 14 10 15 13 16 L15 13 L20 15 L20 19 C20 20 19 21 18 21 C10 21 3 14 3 6 C3 5 4 4 5 4 Z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+        <span>+84 230 123 4567 (call / Zalo)</span>
+      </a>
+      <div class="contact-row">
+        <svg viewBox="0 0 24 24" class="contact-icon"><path d="M12 2 C7 2 4 5.5 4 9.5 C4 15 12 22 12 22 C12 22 20 15 20 9.5 C20 5.5 17 2 12 2 Z" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="9.5" r="2.4" fill="currentColor"/></svg>
+        <span>Đường 7/5, P. Mường Thanh, TP. Điện Biên Phủ, Việt Nam</span>
+      </div>
+      <div class="contact-row contact-hours">
+        <svg viewBox="0 0 24 24" class="contact-icon"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 7 L12 12 L16 14" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+        <span>Office hours 7:30–17:30, daily</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="brand footer-brand">
+      <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true">
+        <path d="M4 34 L16 16 L23 26 L30 12 L44 34 Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+      </svg>
+      <span class="brand-name">Mường Thanh Travel</span>
+    </div>
+    <nav class="footer-nav">
+      <a href="#valley">Mường Thanh</a>
+      <a href="#laos">Into Laos</a>
+      <a href="#crossing">Border guide</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <p class="footer-note">Điện Biên Phủ, Việt Nam. Replace placeholder contact details before publishing.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
