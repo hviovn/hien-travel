@@ -1,0 +1,32 @@
+# Jekyll configuration for hien-travel
+
+title: Hien Travel
+description: Organize travel tours in Dien Bien Phu and Laos
+baseurl: /hien-travel
+url: https://hviovn.github.io
+
+theme: jekyll-theme-minimal
+
+# Collections
+collections:
+  tours:
+    output: true
+    permalink: /:collection/:path/
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Build settings
+markdown: kramdown
+
+# Exclude files
+exclude:
+  - .gitignore
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules
+  - vendor
